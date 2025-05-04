@@ -1,1 +1,196 @@
-helloo world
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Eduarda Vieira - Portifólio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.4/font/bootstrap-icons.min.css">
+   <style>
+    *{
+        font-family: "georgia", serif;
+        ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        a:link{
+            text-decoration: none;
+        }
+    }
+   .perfil {
+        background-color: black;
+        padding: 40px 10px;
+        text-align: center;
+        color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 200px;
+
+    }
+    .perfil img {
+        border-radius: 50%;
+        border-color: white;
+        border-width: 5px;
+        border-style: solid;
+        width: 150px;
+        height: 150px;
+    }
+    .perfil h2 {
+        margin-top: 10px;
+    }
+    nav {
+        line-height: 3;
+        padding-top: 25px;
+        padding-left: 0px;
+        a:link{
+            color:white
+        }
+        a:visited{
+            color:white
+        }
+       
+    }
+   #inicio {
+       background-image: url('inicio.webp');
+       background-size: cover;
+        background-position: center;
+        padding: 320px 0px 320px 200px;
+        text-align: center;
+        color: white;
+    }
+   
+    #sobre {
+        background-color: #121315;
+        padding: 100px 0px 540px 190px;
+        text-align: center;
+        color: white;
+    }
+
+    #projetos {
+        background-color: #393c41;
+        padding: 100px 0px 540px 190px;
+        text-align: center;
+        color: white;
+        a:link{
+            color:white
+        }
+        a:visited{
+            color:white
+        }
+    }
+
+    #contato {
+        background-color: #121315;
+        padding: 100px 0px 150px 190px;
+        text-align: center;
+        line-height: 2.5;
+        color: white;
+        a:link{
+            color:white
+        }
+        a:visited{
+            color:white
+        }
+    }
+    #whatsapp {
+        background-color: #25D366;
+        padding: 2px 5px;
+        border-radius: 20px;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    #linkedin, #github, #insta {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    #linkedin{
+        a:hover{
+            color: #0077b5;
+        }
+    }
+    #github{
+        a:hover{
+            color: #2d1a99;
+        }
+    }
+    #insta{
+        a:hover{
+            color: #e1306c;
+        }
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px 0px 10px 200px;
+    }
+
+   </style>
+</head>
+<body>
+    <div class="perfil">
+        <header>
+            <img src="perfil.jpg" alt="Foto de perfil de Maria Eduarda Vieira">
+            <h2>Maria Eduarda Vieira</h3>
+            <p>Dev Front-End</p>
+        </header>
+       
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section id="inicio">
+        <h2>Bem-vindo ao meu portfólio!</h2>
+        <p>Aqui você encontrará alguns dos meus projetos e informações sobre mim.</p>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou uma desenvolvedora front-end apaixonada por criar interfaces incríveis e funcionais.</p>
+    </section>
+
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <ul>
+            <li><a href="">projeto 1</a></li>
+            <li><a href="">projeto 1</a></li>
+            <li><a href="">projeto 1</a></li>
+        </ul>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <h4>Fale comigo</h4>
+        <i class="bi bi-envelope"> mariaeduardavieirajob@gmail.com</i><br>
+        <i class="bi bi-whatsapp"> (34) 98837-8506</i><br>
+        <div id="whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=5534988378506">Enviar mensagem</a>
+        </div>
+        
+
+        <h4>Siga-me</h4>
+        <div id="linkedin">
+            <a href="https://www.linkedin.com/in/maria-eduarda-vieira-de-andrade/" ><i class="bi bi-linkedin"></i></a>
+        </div>
+        <div id="github">
+            <a href="https://github.com/MariaEduardaVieira24"><i class="bi bi-github"></i></a>
+        </div>
+        <div id="insta">
+            <a href="https://www.instagram.com/dudinhamini/"><i class="bi bi-instagram"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Maria Eduarda Vieira de Andrade. Todos os direitos reservados.</p>
+    </footer>
+    
+</html>
