@@ -127,6 +127,11 @@
         margin-left: 200px;
         width: calc(100% - 200px);
       }
+      @media (max-width: 767.98px) {
+       .main-content {
+        padding-top: 56px; /* altura da navbar fixa*/
+      }
+      }
     }
   </style>
 </head>
@@ -148,7 +153,7 @@
 
     <div class="main-content">
       <!-- Navbar mobile -->
-      <nav class="navbar navbar-dark bg-dark d-md-none">
+      <nav class="navbar navbar-dark bg-dark d-md-none fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Maria Eduarda</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuMobile">
