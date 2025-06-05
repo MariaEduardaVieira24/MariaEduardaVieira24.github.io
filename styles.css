@@ -1,0 +1,140 @@
+body {
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.sidebar img {
+  border-radius: 50%;
+  border: 5px solid white;
+  width: 140px;
+  height: 140px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 15px 0;
+}
+
+.sidebar a:hover {
+  color: #14f031;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#inicio {
+  background: url("img/inicio.webp") center/cover no-repeat;
+  color: white;
+}
+
+#sobre {
+  background-color: #121315;
+  color: white;
+}
+
+.projects {
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-left: 55px;
+}
+#projetos {
+  background-color: #393c41;
+  color: white;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: white;
+  }
+  a:hover {
+    color: #14f031;
+  }
+}
+
+#contato {
+  background-color: #121315;
+  color: white;
+  padding: 80px 20px;
+}
+
+#whatsapp {
+  background-color: #25d366;
+  padding: 5px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+/* Hover personalizado */
+.social-icons a.linkedin:hover {
+  color: #0077b5;
+}
+
+.social-icons a.github:hover {
+  color: #2d1a99;
+}
+
+.social-icons a.instagram:hover {
+  color: #e1306c;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+  .layout {
+    display: flex;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    padding-top: 60px;
+  }
+
+  .main-content {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+  }
+  @media (max-width: 767.98px) {
+    .main-content {
+      padding-top: 56px; /* altura da navbar fixa*/
+    }
+  }
+}
