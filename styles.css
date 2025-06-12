@@ -1,5 +1,5 @@
 body {
-  font-family: Georgia, serif;
+   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -46,15 +46,14 @@ section {
 #sobre {
   background-color: #121315;
   color: white;
+  
 }
 
-.projects {
-  width: 100%;
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
-  margin-left: 55px;
+.text-left {
+  text-align: left;
 }
+
+
 #projetos {
   background-color: #393c41;
   color: white;
@@ -70,6 +69,64 @@ section {
     color: #14f031;
   }
 }
+
+.projeto {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.imagem-projeto {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.titulo-projeto {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  z-index: 2;
+}
+
+.projeto:hover .imagem-projeto {
+  transform: scale(1.1);
+  filter: blur(3px);
+}
+
+.projeto:hover .overlay {
+  opacity: 1;
+}
+
+.modal-content {
+  background-color: #1e1e2f; 
+  color: #ffffff;           
+}
+
+.modal-body a.btn {
+  margin-right: 10px;
+}
+
+.btn-close {
+  filter: invert(1); /* deixa o "X" branco em fundo escuro */
+}
+
 
 #contato {
   background-color: #121315;
@@ -138,3 +195,7 @@ footer {
     }
   }
 }
+
+
+
+

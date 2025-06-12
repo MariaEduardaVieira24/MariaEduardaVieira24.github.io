@@ -79,41 +79,56 @@
 
         <section id="sobre">
           <div class="container">
-            <h2>Sobre Mim</h2>
-            <p>
-              Sou uma desenvolvedora front-end apaixonada por criar interfaces
-              incríveis e funcionais.
+            <h2 class="mb-5">Sobre Mim</h2>
+            <p class="text-left">
+               Olá! Me chamo Maria Eduarda Vieira, tenho 20 anos e estou no
+              último período do curso de Análise e Desenvolvimento de Sistemas.
+              Desde o início da graduação, me apaixonei pela criação de
+              interfaces e pela experiência do usuário, o que me levou a
+              escolher o desenvolvimento front-end como minha área de atuação.
+            </p>
+            <p class="text-left">
+               Atualmente, estou me especializando em React, além de já trabalhar
+              com HTML, CSS, JavaScript e Bootstrap. Estou sempre buscando
+              aprender mais e evoluir minhas habilidades através de cursos,
+              projetos pessoais e experiências práticas. Meu objetivo é crescer
+              como desenvolvedora front-end, contribuindo com soluções criativas
+              e funcionais que unam estética, usabilidade e performance.
             </p>
           </div>
         </section>
 
         <section id="projetos">
-          <h2 id="titulo-projetos">Projetos</h2><br>
-          <div class="projects">
+          <h2 id="titulo-projetos" class="mb-4">Projetos</h2>
+          <br />
+          <div class="container mt-5">
+            <div class="row">
+              <!-- Projeto 1 -->
+              <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div
+                  class="projeto"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalProjetoStarbucks"
+                >
+                  <img
+                    src="img/starbucks.png"
+                    alt="Projeto Starbucks"
+                    class="imagem-projeto img-fluid"
+                  />
+                  <div class="overlay">
+                    <h3 class="titulo-projeto">Replica Starbucks</h3>
+                  </div>
+                </div>
+              </div>
 
-            <div class="projects">
-              <a href="https://booking-system-portifolio.netlify.app/index.html"
-                >Sistema de reservas</a
-              >
-            </div>
-
-            <div class="projects">
-              <a href="#">Replica do Spotify</a>
-            </div>
-
-            <div class="projects">
-              <a href="#">Site do Starbuks</a>
-            </div>
-
-            <div class="projects">
-              <a href="#">Pacman</a>
+              <!-- Proximos projetos -->
             </div>
           </div>
         </section>
 
         <section id="contato">
           <div class="container">
-            <h2>Contato</h2>
+            <h2 class="mb-3">Contato</h2>
             <p>
               <i class="bi bi-envelope"></i> mariaeduardavieirajob@gmail.com
             </p>
@@ -147,6 +162,55 @@
             reservados.
           </p>
         </footer>
+      </div>
+    </div>
+
+    <!-- Modal Projeto Starbucks -->
+    <div
+      class="modal fade"
+      id="modalProjetoStarbucks"
+      tabindex="-1"
+      aria-labelledby="modalProjetoStarbucksLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalProjetoStarbucksLabel">
+              Projeto Starbucks
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Fechar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="img/starbucks.png"
+              alt="Projeto Starbucks"
+              class="img-fluid mb-3 rounded"
+            />
+            <p>
+              <strong>Descrição:</strong> site simples que replica o Starbucks,
+              focado em uma interface estética e responsiva.
+            </p>
+            <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript.</p>
+            <a
+              href="https://replica-star-bucks.netlify.app"
+              class="btn btn-primary"
+              target="_blank"
+              >Ver Projeto</a
+            >
+            <a
+              href="https://github.com/MariaEduardaVieira24/Starbucks.git"
+              class="btn btn-outline-secondary"
+              target="_blank"
+              >Ver Código</a
+            >
+          </div>
+        </div>
       </div>
     </div>
 
